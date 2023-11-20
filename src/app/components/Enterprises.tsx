@@ -60,8 +60,8 @@ const Enterprises = () => {
       <div className={`${styles.exterprises_container} grid gap-4 p-[20px]`}>
         {content.cards.map((each, index) => {
           return (
-            <div key={index} className={`${styles.individual_card} relative overflow-hidden flex flex-col relative h-fit group `}>
-              <img src={each.bg_img} className="relative" />
+            <div key={index} className={`${styles.individual_card}  overflow-hidden flex flex-col relative h-fit group `}>
+              {/* <img alt="image" src={each.bg_img} className="relative" /> */}
               <div className={`${styles.content_overlay} w-full h-full absolute md:top-0 md:left-0 translateY(0)`}></div>
               <div className={`${styles.content_block} absolute bottom-0 left-0 right-0 md:max-h-[75px] sm:mb-[40px] lg:max-h-[50px] p-[20px] md:group-hover:h-[auto] md:group-hover:max-h-[220px]`}>
                 <h2 className="text-white text-[20px] leading-[24px] sm:h-[40px] md:h-[70px] lg:h-[50px] hover:h-auto font-bold my-[10px]">

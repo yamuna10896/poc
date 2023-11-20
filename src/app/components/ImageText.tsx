@@ -12,10 +12,10 @@ const ImageText = (props: Props) => {
   return (
     <div className="flex flex-col md:flex-row items-start">
       <div className={`w-[${attrs.width}] h-[${attrs.height}] flex justify-center relative object-contain order-${order.first}`}>
-      <img
+      {/* <img
         src={data?.data?.attributes?.url || data}
         alt="image"
-      />
+      /> */}
       </div>
       <div className={`md:w-1/2 order-${order.second}`}>{children}</div>
     </div>

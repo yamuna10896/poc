@@ -22,8 +22,8 @@ const ClinentSuccess = () => {
         {content?.heading}
       </h3>
       <div className="flex flex-row row-2 px-[30px] items-start">
-        {content?.card?.map((item) => (                     
-          <div className="w-1/3 px-[16px]">
+        {content?.card?.map((item,index) => (                     
+          <div key={index} className="w-1/3 px-[16px]">
             <div className="bg-[#EFA523] text-white text-[32px] p-2">
               <h3>{item?.title}</h3>
             </div>

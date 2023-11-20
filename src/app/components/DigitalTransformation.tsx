@@ -38,7 +38,7 @@ const DigitalTransformation = () => {
               key={index}
               className={`${styles.card_container} max-w-[555px] overflow-hidden h-full flex flex-col relative group `}
             >
-              <img src={card.image} className="relative" />
+              {/* <img alt="img" src={card.image} className="relative" /> */}
               <div className={`${styles.content_overlay} w-full h-full absolute top-0 left-0 translateY(0)`}>
               <div className={`${styles.hidden_block} absolute bottom-0 left-0 right-0 md:max-h-[60px] lg:max-h-[50px] px-[20px] md:group-hover:bottom-[20px] md:group-hover:h-[auto] md:group-hover:max-h-[200px]`}>
                 <h1 className="text-white text-[20px] leading-[24px] font-bold mb-[32px]">

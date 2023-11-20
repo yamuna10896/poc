@@ -54,7 +54,7 @@ const strapiData = {
             <div key={index} className={`${styles.card_container} flex items-center rounded-xl px-[40px] py-[20px] order hover:bg-[#e1b166] hover:border-yellow-500 border-2 border-transparent hover:border-2 hover:shadow-2xl ${index % 2 == 0 ? "bg-[linear-gradient(180deg,_#ffce78_0%,_#ffd796_100%)]" : "bg-[linear-gradient(180deg,_#f55337_0%,_#f6664c_100%)]"}`} style={{ order: columnOrder}}>
                 {/* <img src={`${strapiEndPoints?.imagesBaseURL}${card?.img?.data?.attributes?.url}`}/> */}
 
-                    <img src={card.img.src}/>
+                    {/* <img alt='image' src={card.img.src}/> */}
                 <div className='flex ml-[20px]'>
                     {/* <h3 dangerouslySetInnerHTML={{
                         __html:card?.title

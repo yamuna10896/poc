@@ -52,8 +52,9 @@ const AboutBullit = () => {
           more information, visit: <a href="https://bullitt.com/en-us/" target="_blank">www.bullitt.com</a> / <a href="https://bullitt-group.com/" target="_blank">www.bullitt-group.com</a>.
         </div>
       </ImageText> */}
-      {content.secs.map((each) => (
+      {content.secs.map((each,index:any) => (
         <ImageText
+        key={index}
         data={each.image}
         attrs={{ width: "570px", height: "328px" }}
         order={{ first: each.order[0], second: each.order[1] }}

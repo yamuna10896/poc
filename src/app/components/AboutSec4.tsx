@@ -51,8 +51,8 @@ export const AboutSec4 = () => {
   ];
   return (
     <div className="flex py-[50px] flex-col md:flex-row sm:items-center md:items-start">
-      {secs.map((eachSec) => (
-        <div className="px-[23px] pb-[30px] flex flex-col items-center text-center md:w-1/3">
+      {secs.map((eachSec,index) => (
+        <div key={index} className="px-[23px] pb-[30px] flex flex-col items-center text-center md:w-1/3">
           <h1 className="mb-[25px] font-extrabold text-[24px] leading-[23px]">
             {eachSec.title}
           </h1>
@@ -77,16 +77,17 @@ export const AboutSec4 = () => {
           </a>
         </p>
         <div className="flex items-center mt-[20px]">
-          {socialMediaIcons.map((icon) => {
+          {socialMediaIcons.map((icon,index) => {
             return (
-              <div className="h-[36px] w-[36px] mr-[11px] flex justify-center items-center rounded-full bg-[#e84924] hover:bg-[#fff] shadow hover:shadow-1 hover:shadow-10 hover:shadow-gray-400">
+              <div key={index} className="h-[36px] w-[36px] mr-[11px] flex justify-center items-center rounded-full bg-[#e84924] hover:bg-[#fff] shadow hover:shadow-1 hover:shadow-10 hover:shadow-gray-400">
                 <a href={icon.href} target="_blank" title={icon.title}>
-                  <img
+                  {/* <img
+                    alt="img"
                     src={icon.icon.src}
                     onMouseOver={(e) => (e.currentTarget.src = icon.icon2.src)}
                     onMouseOut={(e) => (e.currentTarget.src = icon.icon.src)}
                     className="h-[17px] w-[16px]"
-                  />
+                  /> */}
                 </a>
               </div>
             );

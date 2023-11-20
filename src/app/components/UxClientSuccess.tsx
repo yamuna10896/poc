@@ -11,9 +11,9 @@ const UxClientSuccess = () => {
                 <p className='text-base'>The client, is a billion-dollar company servicing various industries such as agriculture, building, construction, geospacial, government, transportation, etc.</p>
                 <button className='bg-[#33d796] px-[20px] py-[10px] rounded border my-[10px] text-[18px]'>Download</button>
             </div>
-            <div>
-                <img src={bgImage.src} className='border-white border-8 shadow-xl'/>
-            </div>
+            {/* <div>
+                <img alt='image' src={bgImage.src} className='border-white border-8 shadow-xl'/>
+            </div> */}
         </div>
     </div>
   )
