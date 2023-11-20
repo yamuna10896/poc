@@ -7,10 +7,10 @@ import { useEffect, useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Innominds POC',
-  description: 'Innominds website by next app',
-}
+// export const metadata: Metadata = {
+//   title: 'Innominds POC',
+//   description: 'Innominds website by next app',
+// }
 
 export default function RootLayout({
   children,
