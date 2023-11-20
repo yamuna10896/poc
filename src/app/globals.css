@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  /* --background-hero-image-url:`url('../../../../public/assets/bg-hero.webp')`; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* body {
+ 
+} */
+
+.sec1_container
+  a{
+      color: #f0c75e;
+      text-decoration: none;
+  }
+  a:hover{
+      text-decoration: underline;
+  }

@@ -1,0 +1,94 @@
+.exterprises_container {
+  .content_block{
+    transition: .5s ease-in-out !important;
+  }
+  @media screen and (max-width: 768px) {
+    .individual_card {
+      max-width: 100% !important;
+      grid-column: auto !important;
+      grid-row: auto !important;
+     .content_block{
+      transition: none;
+      }
+       
+    }
+  }
+    .content_overlay {
+      background: transparent
+        linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)) repeat
+        scroll 0 0;
+    }
+  .individual_card:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1/4;
+    max-width: 500px;
+    height: fit-content;
+  }
+  .individual_card:nth-child(2) {
+    grid-column: 3 / 4;
+    max-width: 245px;
+  }
+  .individual_card:nth-child(3) {
+    grid-column: 4 / 5;
+    max-width: 245px;
+  }
+  .individual_card:nth-child(4) {
+    grid-column: 3 / 4;
+    grid-row: row;
+    max-width: 245px;
+  }
+  .individual_card:nth-child(5) {
+    grid-column: 4 / 5;
+    grid-row: row;
+    max-width: 245px;
+  }
+  
+}
+
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  .material-textfield {
+    position: relative;  
+  }
+  
+  label {
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: gray;
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+    transition: .1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+  }
+  input {
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;  
+    padding: 1rem 0.7rem;
+    color: gray;
+    transition: 0.1s ease-out;
+  }
+  input:focus {
+    border-color: #6200EE;  
+  }
+  input:focus + label {
+    color: #6200EE;
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+  }
+  input:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+  }
+}
